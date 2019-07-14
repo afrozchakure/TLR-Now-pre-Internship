@@ -14,11 +14,11 @@
 2. delimiter(data) : The delimiter() function replaces the different delimiters with empty spaces in the string. It returns a dataframe with delimiters removed.
 
 3. splitter(data_frame, json_data) : It takes the dataframe and json_data as input. It makes call to the extract_from_json() and delimiter() functions. 
-
 Here the dataframe returned by the delimiter() is further processed to remove the empty strings within it. 
-
-The over_flow_strategy is checked to remove any extra elements if over_flow_strategy == 'ignore'. 
-
+The over_flow_strategy is checked to remove any extra elements when over_flow_strategy == 'ignore'. 
 Further the list within the DataFrame is converted into a string with spaces, which is then splitted into a number of columns specified by the split_size.  
 
 The splitter() function is called from '__main__' with proper try-except block to check whether the files are 'present' or 'missing'
+
+# Files for sample output:
+df.xlxs | input1.json | input2.json
