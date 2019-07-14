@@ -16,7 +16,7 @@
 3. splitter(data_frame, json_data) : It takes the dataframe and json_data as input. It makes call to the extract_from_json() and delimiter() functions. 
 Here the dataframe returned by the delimiter() is further processed to remove the empty strings within it. 
 The over_flow_strategy is checked to remove any extra elements when over_flow_strategy == 'ignore'. 
-Further the list within the DataFrame is converted into a string with spaces, which is then splitted into a number of columns specified by the split_size.  
+Further the list within the DataFrame is converted into a string with spaces, which is then splitted into a number of columns specified by the split_size. After this, the Column before the split and the columns generated from the original column are concatenated to give the required DataFrame. 
 
 The splitter() function is called from '__main__' with proper try-except block to check whether the files are 'present' or 'missing'
 
