@@ -1,0 +1,7 @@
+{
+  "step_name": "Split",
+  "columnName" : "Name",
+  "splitByDelimiter"  : "\t,space or |",
+  "Split_size" : "3",
+  "overFlowStrategy" : "ignore"
+}
